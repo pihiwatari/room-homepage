@@ -1,0 +1,171 @@
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+  --menu-centering-margin: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+/* hedaer */
+.header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  place-items: center;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+/* navigation */
+.header__nav {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  display: none;
+  justify-content: space-between;
+  padding: 4rem 3rem;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.nav__links-list {
+  display: flex;
+  align-items: center;
+}
+
+.links-list__link-item {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+.link-item__link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* hamburger menu */
+
+.header__menu-icon {
+  margin-left: var(--menu-centering-margin);
+}
+
+/* logo */
+.header__logo-container {
+  margin-right: var(--menu-centering-margin);
+}
+
+/* primera seccion */
+.hero {
+  width: 100%;
+}
+
+.hero__slider {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__image {
+  width: 100%;
+}
+
+/* botones */
+.slider__buttons-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.buttons-container__button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
+}
+
+.button--prev {
+  background-image: url("./images/icon-angle-left.svg");
+}
+.button--next {
+  background-image: url("./images/icon-angle-right.svg");
+}
+
+/* fin de botones */
+
+.hero__copyright,
+.about-us__copyright {
+  padding: 6rem 3rem;
+}
+
+.copyright__title {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.title--large {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.tittle--spaced-letters {
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+
+.copyright__description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--dark-gray);
+}
+
+.copyright__cta {
+  display: inline-block;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  color: var(--black);
+}
+
+.cta__icon {
+  display: inline-block;
+  margin-left: 2rem;
+  width: 50px;
+  height: 1.4rem;
+  background-image: url("./images/icon-arrow.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* fin de primera seccion */
+
+/* inicio segunda seccion */
+.about-us__furniture-image {
+  width: 100%;
+}
+
+/* fin segunda seccion */

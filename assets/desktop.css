@@ -1,0 +1,34 @@
+body {
+  background-color: var(--dark-gray);
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 70% auto;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+/* primera seccion */
+
+.hero {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.hero__copyright {
+  padding: 8rem;
+  background-color: var(--white);
+}
+
+/* segunda seccion */
+
+.about-us {
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+}
+
+.about-us__copyright {
+  background-color: var(--white);
+}
