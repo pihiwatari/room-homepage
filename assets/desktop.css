@@ -1,34 +1,120 @@
-body {
-  background-color: var(--dark-gray);
+a:hover {
+  cursor: pointer;
 }
 
 .main {
-  display: grid;
-  grid-template-rows: 70% auto;
-  margin: 0 auto;
-  max-width: 1440px;
-  height: 100vh;
+  /* margin: 0 auto; */
+  /* width: 100%; */
+  max-width: initial;
+  /* height: 100vh; */
+  box-shadow: 0px 0px 50px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* primera seccion */
 
 .hero {
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 1fr 40%;
+  height: 65vh;
 }
 
-.hero__copyright {
-  padding: 8rem;
+.hero__slider {
+  background-image: url("./images/desktop-image-hero-1.jpg");
+}
+/* header */
+
+.slider__header {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  padding-top: 0;
+}
+
+.header__menu-icon {
+  display: none;
+}
+
+.header__nav {
+  position: static;
+  display: flex;
+  justify-content: initial;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.nav__menu-icon {
+  display: none;
+}
+
+.link-item__link {
+  position: relative;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.link-item__link:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: calc(50% - 25%);
+  width: 50%;
+  height: 3px;
   background-color: var(--white);
 }
+/* fin header */
 
-/* segunda seccion */
+/* botones */
+
+.slider__buttons-container {
+  right: calc(-5.5vw * 2);
+}
+
+.buttons-container__button {
+  height: 5.5vw;
+  width: 5.5vw;
+}
+
+.buttons-container__button:hover {
+  background-color: var(--very-dark-gray);
+}
+
+/* fin botones */
+
+/* hero copyright */
+
+.hero__copyright {
+  margin: auto;
+  padding: 0;
+  width: 75%;
+}
+
+.title--large {
+  font-size: 2.6vw;
+  line-height: 3.2vw;
+}
+
+.copyright__cta {
+  margin-top: 2rem;
+}
+.copyright__cta:hover {
+  filter: invert(62%) sepia(0%) saturate(389%) hue-rotate(138deg)
+    brightness(104%) contrast(89%);
+}
+
+/* fin hero copyright */
 
 .about-us {
   display: grid;
-  grid-template-columns: 30% 1fr 30%;
+  /* grid-template-columns: 1fr 42vw 1fr; */
+  grid-template-columns: 29vw 1fr 29vw;
+  height: 30vh;
+  overflow: hidden;
 }
 
 .about-us__copyright {
-  background-color: var(--white);
+  width: 85%;
+  margin: auto;
+  padding: 0;
+}
+
+.about-us__furniture-image {
+  width: 100%;
 }

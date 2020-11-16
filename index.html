@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/index.css" />
     <link
       rel="stylesheet"
-      media="screen and (min-width:768px)"
+      media="screen and (min-width:1024px)"
       href="./assets/desktop.css"
     />
     <!-- google fonts -->
@@ -25,60 +25,52 @@
     />
     <!-- google fonts/ -->
     <title>Frontend Mentor | Room homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <!--  -->
   <body>
-    <header class="header">
-      <a href="#" class="header__menu-icon">
-        <img src="./assets/images/icon-hamburger.svg" alt="nav-menu-open" />
-      </a>
-      <div class="header__logo-container">
-        <img
-          class="logo-container__logo"
-          src="./assets/images/logo.svg"
-          alt="room"
-        />
-      </div>
-      <nav class="header__nav">
-        <a href="#" class="nav__menu-icon icon-close">
-          <img src="./assets/images/icon-close.svg" alt="nav-menu-close" />
-        </a>
-        <ul class="nav__links-list">
-          <li class="links-list__link-item">
-            <a href="#" class="link-item__link">home</a>
-          </li>
-          <li class="links-list__link-item">
-            <a href="#" class="link-item__link">shop</a>
-          </li>
-          <li class="links-list__link-item">
-            <a href="#" class="link-item__link">about</a>
-          </li>
-          <li class="links-list__link-item">
-            <a href="#" class="link-item__link">contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
     <main class="main">
       <section class="hero">
-        <div class="hero__slider">
-          <img
-            class="slider__image"
-            src="./assets/images/mobile-image-hero-1.jpg"
-            alt="image-1"
-          />
+        <div class="hero__slider" id="slider">
+          <!-- alternative header layout -->
+          <header class="slider__header">
+            <a href="#" class="header__menu-icon">
+              <img
+                src="./assets/images/icon-hamburger.svg"
+                alt="nav-menu-open"
+              />
+            </a>
+            <div class="header__logo-container">
+              <img
+                class="logo-container__logo"
+                src="./assets/images/logo.svg"
+                alt="room"
+              />
+            </div>
+            <nav class="header__nav">
+              <a href="#" class="nav__menu-icon icon-close">
+                <img
+                  src="./assets/images/icon-close.svg"
+                  alt="nav-menu-close"
+                />
+              </a>
+              <ul class="nav__links-list">
+                <li class="links-list__link-item">
+                  <a href="#" class="link-item__link">home</a>
+                </li>
+                <li class="links-list__link-item">
+                  <a href="#" class="link-item__link">shop</a>
+                </li>
+                <li class="links-list__link-item">
+                  <a href="#" class="link-item__link">about</a>
+                </li>
+                <li class="links-list__link-item">
+                  <a href="#" class="link-item__link">contact</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <!-- end of header -->
           <div class="slider__buttons-container">
             <a href="#" class="buttons-container__button button--prev"> </a>
             <a href="#" class="buttons-container__button button--next"> </a>
@@ -97,7 +89,9 @@
           </p>
           <a href="#" class="copyright__cta"
             >SHOP NOW
-            <span class="cta__icon"></span>
+            <span class="cta__icon"
+              ><img src="./assets/images/icon-arrow.svg" alt="arrow"
+            /></span>
           </a>
         </div>
       </section>
@@ -127,22 +121,14 @@
         />
       </section>
     </main>
-    <!-- Home Shop About Contact  Shop now We are available all across the globe With stores
-            all over the world, it's easy for you to find furniture for your
-            home or place of business. Locally, we’re in most major cities
-            throughout the country. Find the branch nearest you using our store
-            locator. Any questions? Don't hesitate to contact us today.
-    Manufactured with the best materials Our modern furniture store provide a
-    high level of quality. Our company has invested in advanced technology to
-    ensure that every product is made as perfect and as consistent as possible.
-    With three decades of experience in this industry, we understand what
-    customers want for their home and office. Shop now About our furniture -->
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">pihiwatari</a>.
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

@@ -17,14 +17,41 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 a {
   text-decoration: none;
 }
+
+.main {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* primera seccion */
+.hero {
+  width: 100%;
+}
+
+.hero__slider {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 375px;
+  background-image: url("./images/mobile-image-hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* hedaer */
-.header {
-  position: absolute;
+.slider__header {
+  /* position: absolute;
   z-index: 2;
-  top: 0;
+  top: 0; */
   display: grid;
   grid-template-columns: auto 1fr;
   place-items: center;
@@ -42,6 +69,10 @@ a {
   padding: 4rem 3rem;
   width: 100%;
   background-color: var(--white);
+}
+
+.nav--active {
+  display: flex;
 }
 
 .nav__links-list {
@@ -71,17 +102,6 @@ a {
   margin-right: var(--menu-centering-margin);
 }
 
-/* primera seccion */
-.hero {
-  width: 100%;
-}
-
-.hero__slider {
-  position: relative;
-  display: flex;
-  overflow: hidden;
-}
-
 .slider__image {
   width: 100%;
 }
@@ -91,6 +111,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 2;
   display: flex;
 }
 
@@ -151,15 +172,15 @@ a {
   color: var(--black);
 }
 
-.cta__icon {
+.cta__icon img {
   display: inline-block;
   margin-left: 2rem;
   width: 50px;
   height: 1.4rem;
-  background-image: url("./images/icon-arrow.svg");
+  /* background-image: url("./images/icon-arrow.svg");
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 /* fin de primera seccion */
 
@@ -169,3 +190,13 @@ a {
 }
 
 /* fin segunda seccion */
+
+.attribution {
+  height: 2vh;
+  font-size: 11px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
